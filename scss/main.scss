@@ -1,0 +1,491 @@
+
+/*head*/
+/*Mobilefirst*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+html {
+    scrollbar-color: rgb(255, 254, 254) black;
+    scrollbar-width: auto;
+    
+    a {
+        text-decoration: none;
+        color: whitesmoke;
+    }
+
+    ul, ol {
+    list-style: none;
+    }
+
+    img {
+        max-width: 100%;
+        border-radius: 10px;
+    
+    }
+
+    h1 {
+        font-family: 'Nanum Gothic Coding', monospace;
+        font-size: 3rem;
+        font-weight: bold;
+    }
+
+}
+
+header {
+    color: whitesmoke;
+    padding: 1rem;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+
+    header ul li {
+        margin-bottom: 0.5rem;
+    }
+
+    h1, h2, h3 {
+        text-align: center;
+    }
+
+}
+
+
+
+
+
+/*tablet*/
+@media only screen and (min-width: 768px) {
+    header {
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    header ul {
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+    }
+}
+
+/**desktop**/
+
+@media only screen and (min-width: 1200px) {
+    header {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 8rem;
+        align-items: center;
+    }
+
+    nav {
+        grid-column: span 2;
+    }
+
+}
+
+/*Portada*/
+
+.portada__index {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
+    
+    h2 {
+        font-family: 'Nanum Brush Script', cursive;
+        font-size: 3rem;
+        font-weight: bold;
+    }
+
+    p {
+        text-align: center;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: bold;
+    
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .portada__index {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        max-height: 500px;
+    }
+
+    .portada__index-img {
+        grid-column: span 3;
+        grid-row: span 3;
+        max-width: 80%;
+    }
+
+    h2 {
+        justify-self: center;
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    
+    .portada__index {
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+        grid-template-rows: repeat(3, auto);
+        
+        border: 5px black solid;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .portada__index-img {
+        grid-column: span 3;
+        grid-row: span 3;
+        max-width: 80%;
+        
+    }
+
+    h2 {
+        font-family: 'Nanum Brush Script', cursive;
+        font-size: 2rem;
+        color: black;
+
+    }
+
+    p {
+        font-size: 1rem;
+        text-align: center;
+        grid-row: span 2;
+    }
+}
+
+/*Estilos*/
+
+.estilos__index {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
+    border: 3px solid black;
+
+    h2 {
+        font-family: 'Nanum Brush Script', cursive;
+        font-size: 2rem;
+    }
+
+    .estilos__index-etiqueta {
+        border: 2px solid black;
+        border-radius: 3%;
+        display: flex;
+        flex-direction: column;
+        width: 40wh;
+        padding: 1rem;
+        margin: 1rem;
+        text-align: center;
+        color: white;
+        gap: 0.5rem;
+        background-color: black;
+
+        & img {
+            max-height: 50vh;
+            object-fit: contain;
+        }
+        
+        & a {
+            border: 3px solid white;
+            border-radius: 10px;
+        }
+
+    }
+}
+
+/*se mantiene igual desde los 768px*/
+@media only screen and (min-width: 768px) {
+    .estilos__index {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-rows: 30vh;
+    }
+
+    .titulo__seccion {
+        justify-self: center;
+        font-size: 2rem;
+        grid-column: span 3;
+    }
+
+    .estilos__index-etiqueta {
+        grid-row: span 2;
+    }
+}
+
+/*Ubicacion*/
+.ubicacion__local {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
+
+    iframe {
+        width: 85vw;
+        height: 85vh;
+        border-radius: 15px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .ubicacion__local {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 10 repeat(2, 1fr);
+        
+        border: 5px black solid;
+        justify-content: center;
+        align-items: center;
+        overflow: auto;
+        gap: 1rem;
+    }
+
+    iframe {
+        grid-column: span 2;
+        grid-row: span 2;
+        max-width: 60vw;
+        max-height: 100vh;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .ubicacion__local {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 10 repeat(2, 1fr);
+        
+        border: 5px black solid;
+        justify-content: center;
+        align-items: center;
+        overflow: auto;
+        gap: 1rem;
+    }
+
+    iframe {
+        grid-column: span 2;
+        grid-row: span 2;
+        max-width: 60vw;
+        max-height: 80vh;
+    }
+
+
+    p {
+        grid-row: span 2;
+        padding: 10vh;
+        margin: 10vh;
+    }
+
+    .ubicacion__local-parrafo {
+        grid-row: span 2;
+        background-color: cadetblue;
+        border-radius: 15px;
+        border: 2px black solid;
+        padding: 10vh;
+        margin: 10vh;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    
+    main {
+        background-image: url(../images/fondo-html.png)
+    }
+
+    h2 {
+        background-color: white;
+        align-items: center;
+        justify-content: center;
+    }
+    
+}
+
+/*footer - redes*/
+
+.footer__redes {
+    font-family: 'Nanum Gothic Coding', monospaces;
+    font-size: 2rem;
+    background-color: black;
+    border: 2px solid white;
+    gap: 1rem;
+
+    .container__footer {
+
+        & h3 {
+            text-align: center;
+        }
+
+
+        .container__footer-item {
+            padding: auto;
+
+            .footer__redes-icono {
+                color: yellow;
+            
+                &:hover {
+                    color: green;
+                
+                }
+            }
+        
+        }
+
+        .container__footer-p {
+            text-align: center;
+        
+        }
+    }
+}
+
+
+/*PAGES*/
+
+/*- GALERIA*/
+
+.contenedor__galeria-img {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: auto;
+    padding-top: 3rem;
+
+    .galeria__img {
+        width: 300px;
+        height: 200px;
+        margin-bottom: 30px;
+        object-fit: cover;
+        filter: brightness(70%);
+
+        &:hover {
+            filter: brightness(100%);
+        }
+    }
+
+}
+
+/*AGENDA - formulario*/
+
+.container {
+
+    .input-box {
+
+        & input{ 
+            border-radius: 5px;
+            border: 2px solid black;
+        }
+        
+        & textarea {
+            border-radius: 5px;
+            border: 2px solid black;
+            resize: vertical;
+            }
+    }
+
+}
+
+/*Preguntas frecuentes*/
+
+main {
+    .seccion__preguntas {
+
+        &-h2 {
+            text-align: center;
+        }
+        &-img {
+            width: 80%;  
+            margin: 0 auto; 
+
+            & img {
+                width: 100%;
+                object-fit: cover;
+                border: 2px solid black;
+                border-radius: 20px;
+                height: 50vh;
+            }
+        }
+        
+        .texto__details {
+
+            & p {
+                color: black;
+                font-weight: bold;
+                background-color: cadetblue;
+                text-wrap: balance;
+                border-radius: 15px;
+                width: fit-content;
+            }
+
+            & details summary {
+                padding: 1rem;
+                width: fit-content;
+                background-color: whitesmoke;
+                border-radius: 15px;
+                border: 2px black solid;
+                margin: 1%;
+                list-style: none;
+            }
+        }
+    }
+}
+
+
+/*Experiencia*/
+
+/*Ultimos Proyectos*/
+/* hay algo pisando el grid de proyectos en 768px y 1200px y no lo puedo ver*/
+.proyectos__experiencia {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 100px 1fr;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem;
+    gap: 1rem;
+    border: 3px solid black;
+
+    .titulo__seccion {
+        display: grid;
+        grid-column: span 5;
+        text-align: center;
+        
+    }
+
+    &-proyecto {
+        display: grid;
+        max-width: 100%;
+        grid-template-columns: repeat(auto-fill);
+        border: 2px solid black;
+        
+        border-radius: 3%;
+        max-width: 50%;
+        padding: 1rem;
+        margin: 1rem;
+        gap: 0.5rem;
+        background-color: black;
+
+        img {
+            max-width: 100%;
+        }
+    }
+}
