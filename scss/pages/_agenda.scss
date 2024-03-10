@@ -1,0 +1,37 @@
+/*AGENDA - formulario*/
+
+.formulario__agenda {
+
+    .formulario__agenda-descripcion {
+        background-color: cadetblue;
+        border-radius: 15px;
+        border: 2px black solid;
+        padding: 5vh;
+        margin: 5vh;
+    }
+
+    .formulario__agenda-form {
+        
+        .input-box {
+            
+            & input{ 
+                border-radius: 5px;
+                border: 2px solid black;
+                
+            }
+            
+            & textarea {
+                border-radius: 5px;
+                border: 2px solid black;
+                resize: vertical;
+                }
+        }
+
+        #boton-agenda:hover {
+
+            filter: drop-shadow(16px 16px 20px black) invert(75%);
+            
+        }
+
+    }
+}

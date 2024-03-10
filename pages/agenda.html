@@ -34,15 +34,15 @@
     </header>
 
     <main>
-        <section class="container shadow-sm p-3 mb-5 col-xl-12">
+        <section class="formulario__agenda shadow-sm p-3 mb-5 col-xl-12">
 
             <div class="row text-center">
                 <h2 class="titulo__seccion display-3 fw-bold">Contacto-Solicitar turno</h2>
                 <div class="text-center text-md-start  col-md-6 col-xl-6">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, nemo rem. Amet, at? Ipsam, nemo?
+                    <p class="formulario__agenda-descripcion">Comunicate para reservar fecha y horario o para realizar consultas, estamos a disposicion.
                     </p>
 
-                    <form action="" class="d-flex flex-column gap-2 col-xl-6">
+                    <form action="" class="formulario__agenda-form d-flex flex-column gap-2 col-xl-6">
                         <div class="input-box">
                             <input type="text" class="form-control" placeholder="Nombre y apellido" required="required">
                         </div>
@@ -58,7 +58,7 @@
                             <label for="fecha-datepicker-2">Selecciona una fecha</label>
                             <input name="fecha" type="date" class="form-control" value="" placeholder="dd/mm/aaaa" required="required"/>
                         </div>
-                        <input type="submit" value="enviar" class="btn btn-dark align-self-center">
+                        <input type="submit" value="enviar" id="boton-agenda" class="btn btn-dark align-self-center">
                     </form>
                 </div>
             <div class="d-none d-md-block col-md-6 col-xl-6">
