@@ -14,13 +14,10 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <title>Emanuel Basich - Tattoo</title>
-
 </head>
-
-
 <header>
     <h1 class="titulo__sitio">Emanuel Basich - Tattoo</h1>
-    <nav>
+    <nav id="nav-bar">
         <ul>
             <li><a href="./index.html" target="_self">Home</a></li>
             <li><a href="./pages/agenda.html" target="_self">Agenda</a></li>
@@ -36,12 +33,16 @@
         <h2 class="titulo__seccion">Sobre mi</h2>
         <img class="portada__index-img" src="./images/emanuel-byn-zoom.jpeg" alt="Artista">
 
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla porro incidunt harum rem tempore animi,
-            corrupti enim ullam ducimus doloribus.</p>
+        <p class="portada__index-descripcion">Soy Emanuel Basich, nacido y formado en la ciudad de Bahia Blanca.
+            Involucrado en el mundo artístico desde muy chico, aficionado por la ilustración y por la escultura en
+            hierro.
+            A comienzos del año 2023 comencé mi carrera como tatuador, aprendiendo de colegas de mi ciudad y cursos on
+            line.
+            Los estilos en los que mas trabajo son el Fine Line, el puntillismo y el BlackWork, pero realizo y me
+            perfecciono también en estilos como el Tradicional Japones, Old School y Trash Polka entre otros, para
+            encontrar mi mejor versión.
+            Actualmente tatúo en mi ciudad, en un estudio propio situado en Barrio Universitario.</p>
     </section>
-
-
-    <!--El boton en cada estilo te deberan llevar a fotos en la galeria con ese estilo, pero estas deberian tener algun atributo que las linkee-->
 
     <section class="estilos__index">
         <h2 class="titulo__seccion">Estilos</h2>
@@ -49,77 +50,79 @@
 
             <img src="./images/puntillismo.jpeg" alt="Puntillismo">
             <h3>Puntillismo</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-            <a href="estilos__boton">Ver trabajos</a>
+            <p>la técnica imita el estilo pictórico para plasmar el diseño sobre la piel</p>
+            <a href="./pages/galeria.html#puntillismo">Ver trabajos</a>
         </article>
         <article class="estilos__index-etiqueta">
 
-            <img src="./images/full-black.jpeg" alt="Full Black">
-            <h3>Black Work</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-            <a href="estilos__boton">Ver trabajos</a>
+            <img src="./images/alejandro.jpg" alt="Nombres">
+            <h3>Nombres</h3>
+            <p>Nombres con distintas fuentes a eleccion del cliente.</p>
+            <a href="./pages/galeria.html#nombres">Ver trabajos</a>
 
         </article>
         <article class="estilos__index-etiqueta">
 
-            <img src="./images/acuarela.jpg" alt="Acuarela">
-            <h3>Acuarela</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-            <a href="estilos__boton">Ver trabajos</a>
+            <img src="./images/arreglo-valentino.jpg" alt="Arreglos">
+            <h3>Arreglos</h3>
+            <p>arreglos y covers.</p>
+            <br>
+            <a href="./pages/galeria.html#arreglos">Ver trabajos</a>
         </article>
     </section>
 
-
-    
-    <!--Ubicacion del local de tattoo-->
     <section class="ubicacion__local">
         <h2 class="titulo__seccion">Ubicacion</h2>
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.0420944774023!2d-58.37186852557485!3d-34.60309705746309!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a335329274ea79%3A0xd43fe89408b3fa8c!2sAv.%20Corrientes%20120%2C%20C1043AAO%20CABA!5e0!3m2!1ses-419!2sar!4v1705280458421!5m2!1ses-419!2sar"
+        <iframe title="ubicacion__local"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12454.493416188483!2d-62.28983311366222!3d-38.70349518563446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95edbb5cbe92c537%3A0x1d84a0796e62fea6!2sGuatemala%20123%2C%20B8003JNC%20Bah%C3%ADa%20Blanca%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1710080283895!5m2!1ses-419!2sar"
             width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"></iframe>
-        <p class="ubicacion__local-parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat facere repellat error optio beatae
-            voluptates.</p>
+        <p class="ubicacion__local-parrafo">El estudio se encuentra situado en calle Guatemala 132, de barrio
+            universitario.
+            Cuenta con libre estacionamiento, y de fácil llegada por la cantidad de recorridos de colectivos que llegan
+            al lugar.
+            Allí para el cliente contamos con golosinas, bebidas frías, té, mate y café. Solemos contar también con
+            variedad de galletitas, y a veces con facturas. </p>
     </section>
-
 </main>
 
-<!--cambiar footer en bootstrap y modificar estilos en css-->
+
 <footer class="footer__redes text-white">
     <div class="container__footer">
         <div class="row p-3 d-md-flex justify-content-md-between align-items-md-center">
             <div class="container__footer-item d-flex flex-column align-items-center mb-2 col-md-3">
                 <img src="./images/ebts-logo.png" alt="logo" class="img-fluid">
                 <p class="container__footer-p m-0">Emanuel Uitz © 2024, todos los derechos reservados
-                    <br>emauitz@gmail.com</p>
+                    <br>emauitz@gmail.com
+                </p>
             </div>
             <div class="container__footer-item mb-2 col-md-3">
                 <h3>Mis redes</h3>
                 <div class="fs-4 d-flex justify-content-around">
-                    <a href="https://www.instagram.com/emanuelbasich/">
+                    <a href="https://www.instagram.com/emanuelbasich/" title="instagram">
                         <i class="footer__redes-icono bi bi-instagram"></i></a>
-                    <a href="https://wa.me/541122879980">
-                        <i class="footer__redes-icono bi bi-whatsapp"></i>
+                    <a href="https://www.youtube.com/@EmanuelBasichTattoo" title="Youtube">
+                        <i class="footer__redes-icono bi bi bi-youtube"></i>
                     </a>
-                    <a href=""><i class="footer__redes-icono bi bi-twitter-x"></i></a>
+                    
                 </div>
             </div>
             <div class="container__footer-item mb-2 align-items-center col-md-6">
                 <h3>Suscribite para recibir novedades</h3>
                 <form action="" class="d-flex flex-column justify-content-center gap-2">
-                    <input type="text">
+                    <input type="text" placeholder="abc@abc.com" title="mensaje">
                     <input type="submit" value="enviar" class="btn btn-light align-self-center">
                 </form>
             </div>
         </div>
     </div>
 
+    
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
-
 </body>
 
 </html>

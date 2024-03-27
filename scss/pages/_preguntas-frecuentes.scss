@@ -1,0 +1,71 @@
+/*Preguntas frecuentes*/
+
+main {
+    .seccion__preguntas {
+
+        &-h2 {
+            text-align: center;
+        }
+
+        &-img {
+            width: 100%;
+            
+            margin: 0 auto;
+
+            & img {
+                width: 100%;
+                object-fit: cover;
+                border: 2px solid black;
+                border-radius: 20px;
+                height: 30vh;
+            }
+        }
+
+        .texto__details {
+
+            & p {
+                color: black;
+                font-weight: bold;
+                background-color: cadetblue;
+                text-wrap: balance;
+                border-radius: 15px;
+                width: fit-content;
+
+            }
+
+            details[open] summary~* {
+                animation: sweep 1.5s ease-in-out;
+            }
+
+            @keyframes sweep {
+                0% {
+                    opacity: 0;
+                    margin-left: -10px
+                }
+
+                50% {
+                    opacity: 0.5;
+                    margin-left: -5px
+                }
+
+                100% {
+                    opacity: 1;
+                    margin-left: 0px
+                }
+
+            }
+
+        }
+
+        & details summary {
+            padding: 1rem;
+            width: fit-content;
+            background-color: whitesmoke;
+            border-radius: 15px;
+            border: 2px black solid;
+            margin: 1%;
+            list-style: none;
+
+        }
+    }
+}

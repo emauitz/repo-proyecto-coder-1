@@ -1,0 +1,35 @@
+/*footer - redes*/
+
+.footer__redes {
+    font-family: 'Nanum Gothic Coding', monospaces;
+    font-size: 2rem;
+    background-color: black;
+    border: 2px solid white;
+    gap: 1rem;
+
+    .container__footer {
+
+        & h3 {
+            text-align: center;
+        }
+
+        .container__footer-item {
+            padding: auto;
+
+            .footer__redes-icono {
+                color: yellow;
+            
+                &:hover {
+                    color: green;
+                
+                }
+            }
+
+        }
+
+        .container__footer-p {
+            text-align: center;
+        
+        }
+    }
+}

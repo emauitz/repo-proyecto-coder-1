@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+html {
+    scrollbar-color: rgb(255, 254, 254) black;
+    scrollbar-width: auto;
+
+    a {
+        text-decoration: none;
+        color: whitesmoke;
+    }
+
+    ul,
+    ol {
+        list-style: none;
+    }
+
+    img {
+        max-width: 100%;
+        border-radius: 10px;
+
+    }
+
+    h1 {
+        font-family: 'Nanum Gothic Coding', monospace;
+        font-size: 3rem;
+        font-weight: bold;
+    }
+
+    main {
+        @include desktop {
+            background-image: url(../images/fondo-html.png)
+        }
+
+        h2 {
+            @include desktop {
+                background-color: white;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+
+}
